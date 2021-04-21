@@ -35,9 +35,6 @@ pre {
 .comment {
   font-style: italic;
   color: #666666;
-}
-input, label {
-  visibility: hidden;
 }`;
 let char = 0;
 let line = '';
