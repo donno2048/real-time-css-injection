@@ -107,4 +107,4 @@ setInterval(function() {
 		target.children[target.children.length - 1].innerHTML = span;
 		char++;
 	}
-}, 10);
+}, 20);
