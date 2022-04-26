@@ -3,7 +3,7 @@ let text = `
 
 html, body { 
   margin: 0px; 
-  height: 100%; 
+  height: 100%;
 }
 pre {
   width: 100%;
@@ -35,6 +35,39 @@ pre {
 .comment {
   font-style: italic;
   color: #666666;
+}
+body {
+  font-size: 10px;
+}
+#heart {
+  width: 300px;
+  height: 300px;
+  background: white;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+#heart::before, #heart::after {
+  content: '';
+  background: red;
+  position: absolute;
+  width: 300px;
+  height: 480px;
+  border-radius: 300px 300px 0 0;
+}
+#heart::before {
+  left: 300px;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#heart::after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+#heart {
+  background: transparent;
 }`;
 let char = 0;
 let line = '';
